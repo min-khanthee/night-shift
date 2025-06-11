@@ -1,0 +1,40 @@
+# Source
+src/
+*.ts
+!*.d.ts
+
+# Build
+tsconfig.json
+tsconfig.*.json
+eslint.config.mjs
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Tests
+**/test/
+**/*.test.*
+
+# Documentation
+vscode-extension-quickstart.md
+
+# Git
+.git/
+.gitignore
+
+# VS Code
+.vscode/
+.vscode-test/
+*.code-workspace
+**/.vscode-test.*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
