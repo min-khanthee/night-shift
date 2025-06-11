@@ -3,8 +3,8 @@
   "displayName": "Night Shift",
   "description": "Dim selected lines to reduce visual noise and stay focused in dense files.",
   "icon": "images/icon.png",
-  "version": "0.0.1",
-  "publisher":"minlabs",
+  "version": "0.0.2",
+  "publisher": "minlabs",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "extension"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:night-shift.isolateSelection",
     "onCommand:night-shift.toggleDim",
     "onCommand:night-shift.clearDimsInFile",
@@ -51,27 +52,27 @@
       }
     ],
     "keybindings": [
-  {
-    "command": "night-shift.isolateSelection",
-    "key": "cmd+shift+1",
-    "when": "editorTextFocus"
-  },
-  {
-    "command": "night-shift.toggleDim",
-    "key": "cmd+shift+2",
-    "when": "editorTextFocus"
-  },
-  {
-    "command": "night-shift.clearDimsInFile",
-    "key": "cmd+shift+9",
-    "when": "editorTextFocus"
-  },
-  {
-    "command": "night-shift.clearAllDims",
-    "key": "cmd+shift+0",
-    "when": "editorTextFocus"
-  }
-]
+      {
+        "command": "night-shift.isolateSelection",
+        "key": "cmd+shift+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "night-shift.toggleDim",
+        "key": "cmd+shift+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "night-shift.clearDimsInFile",
+        "key": "cmd+shift+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "night-shift.clearAllDims",
+        "key": "cmd+shift+0",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
